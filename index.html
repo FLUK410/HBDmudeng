@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>💌 สุขสันต์วันเกิด 🎂</h1>
+
+<div class="envelope" onclick="openEnvelope()">
+  <div class="flap" id="flap">
+    <span class="click-hint">📩 Click</span>
+  </div>
+  <div class="letter" id="letter">
+    <p>ขอให้ปีนี้เป็นปีที่สดใส เต็มไปด้วยรอยยิ้มและสิ่งดีๆนะคร้าบบบ ✨</p>
+  </div>
+</div>
+
+  <div class="reply-form" id="replyForm">
+    <h3>✏️ พิมพ์ตอบกลับ</h3>
+    <form onsubmit="handleReply(event)">
+      <label for="name">ชื่อของคุณ:</label>
+      <input type="text" id="name" required>
+
+      <label for="message">ข้อความถึงเพื่อน:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">ส่งคำตอบ 💬</button>
+    </form>
+  </div>
+
+  <div class="thank-you" id="thankYou">
+    💖 ขอบคุณสำหรับคำตอบ! เพื่อนคุณจะต้องยิ้มแน่ๆ :)
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
