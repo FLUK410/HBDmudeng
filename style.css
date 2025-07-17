@@ -98,3 +98,33 @@ button {
   pointer-events: none;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .envelope {
+    width: 150px;
+    height: 100px;
+  }
+
+  .letter {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .reply-form {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  input, button {
+    font-size: 1rem;
+  }
+
+  .click-hint {
+    font-size: 1rem;
+  }
+}
