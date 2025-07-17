@@ -2,40 +2,46 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday!</title>
+  <title>Happy Birthday</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>💌 สุขสันต์วันเกิด 🎂</h1>
+<div class="container">
+  <div class="envelope" id="envelope" onclick="openLetter()"></div>
 
-<div class="envelope" onclick="openEnvelope()">
-  <div class="flap" id="flap">
-    <span class="click-hint">📩 Click</span>
+  <div class="letter-content" id="letterContent">
+    <p>สุขสันต์วันเกิดนะครับ 🎉</p>
+    <button onclick="showMore()">ดูเพิ่มเติม 💌</button>
   </div>
-  <div class="letter" id="letter">
-    <p>ขอให้ปีนี้เป็นปีที่สดใส เต็มไปด้วยรอยยิ้มและสิ่งดีๆนะคร้าบบบ ✨</p>
+
+  <div class="more-content" id="moreContent">
+    <p>
+      🥳 ขอให้มีความสุขมาก ๆ นะครับ<br><br>
+
+      ปีนี้ผมไม่มีอะไรให้มาก นี่อาจจะเป็นแค่เว็บเล็ก ๆ 🌐<br>
+      แต่สำหรับผม มันเป็นวิธีหนึ่งในการอวยพรวันเกิดให้ใครสักคน<br><br>
+
+      คนที่ผมเห็นว่าเป็นเพื่อนที่ดี 👭<br>
+      เป็นคนที่อยากให้มีรอยยิ้มในวันสำคัญ 😊<br><br>
+
+      ผมอาจไม่ได้สนิทกับคุณมาก แต่ก็อยากบอกว่า<br>
+      คุณคือคนที่ผมมองว่า “สำคัญ” ในแบบของผม ❤️<br><br>
+
+      ขอให้ปีนี้คุณมีความสุขที่สุด เท่าที่จะเป็นไปได้เลยนะครับ 🎈<br><br>
+
+      ตอนแรกก็ไม่คิดว่าจะได้เป็นเพื่อนกับคุณนะ<br>
+      แต่พอได้เป็น...อืม ก็สนุกดี 🤭<br><br>
+
+      ตอนที่ครูสุ่มให้นั่งข้างคุณ ตอนแรกคือ...ไม่อยากคุยด้วยเท่าไหร่เลย 😅<br>
+      แต่ถ้าไม่คุย สุดท้ายผมก็คงไม่ได้คุณเป็นเพื่อนอ่ะครับ 🙂<br><br>
+
+      ปีนี้ก็ขอให้มีความสุขมาก ๆ อีกครั้งนะครับ 🎂<br>
+      14 แล้ว 🎉 ก็เป็นหมูเด้งของเพื่อนในกลุ่มต่อไปนะ eiei 🐷✨
+    </p>
   </div>
 </div>
 
-  <div class="reply-form" id="replyForm">
-    <h3>✏️ พิมพ์ตอบกลับ</h3>
-    <form onsubmit="handleReply(event)">
-      <label for="name">ชื่อของคุณ:</label>
-      <input type="text" id="name" required>
-
-      <label for="message">ข้อความถึงเพื่อน:</label>
-      <textarea id="message" rows="4" required></textarea>
-
-      <button type="submit">ส่งคำตอบ 💬</button>
-    </form>
-  </div>
-
-  <div class="thank-you" id="thankYou">
-    💖 ขอบคุณสำหรับคำตอบ! เพื่อนคุณจะต้องยิ้มแน่ๆ :)
-  </div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
